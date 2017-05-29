@@ -19,7 +19,7 @@ cd my-awesome-npm-package
 ### Usage
 
 1. Write code in `src` directory
-2. `npm run build` or `yarn build`3
+2. `npm run build` or `yarn build`
 3. `npm publish`
 
 #### Scripts
