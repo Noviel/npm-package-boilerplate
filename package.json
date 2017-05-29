@@ -1,0 +1,34 @@
+{
+  "name": "create-npm-package",
+  "version": "1.0.1",
+  "description": "Boilerplate for npm package",
+  "main": "dist/index.js",
+  "author": "Aleksandr Snov <snov.contact@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint src",
+    "build": "babel src --out-dir dist",
+    "major-release": "npm --no-git-tag-version version major && npm publish",
+    "minor-release": "npm --no-git-tag-version version minor && npm publish",
+    "patch-release": "npm --no-git-tag-version version patch && npm publish"
+  },
+  "jest": {
+    "rootDir": "",
+    "testRegex": "(src).*(/__tests__/.*|(\\.|/)(test|spec))\\.jsx?$"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-eslint": "7.2.3",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "3.19.0",
+    "eslint-config-react-app": "^1.0.4",
+    "eslint-plugin-flowtype": "2.33.0",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jsx-a11y": "5.0.1",
+    "eslint-plugin-react": "7.0.1",
+    "jest": "^20.0.4"
+  }
+}
